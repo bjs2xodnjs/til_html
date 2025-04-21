@@ -245,8 +245,8 @@ git config --global core.editor "code --wait"
 ### 1.6. 사용자 아이디 저장
 
 ```bash
-git config --global user.name "id"
-git config --global user.emall "id@gmail.com"
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
 ```
 
 ## 2. Git 명령어 실행하기
@@ -274,6 +274,15 @@ git add .
 ```bash
 git commit
 ```
+
+- 새로운 작업단위, 즉 브랜치 생성하기
+
+```bash
+git branch header
+git switch header
+```
+
+- 월요일 할 거지롱.
 
 ## 3. GitHub 관리
 
