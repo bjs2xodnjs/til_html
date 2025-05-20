@@ -6,6 +6,9 @@
   display: flex;
   gap: 25px;
 }
+.sw_banner {
+  border-radius: 15px;
+}
 
 .banner_list {
   border-radius: 15px;
@@ -22,6 +25,7 @@
   height: 50px;
   border-radius: 50px;
 }
+
 .banner_left {
   left: 0;
   transform: translateX(-50%);
