@@ -4,30 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>나의 til</title>
-    <!-- 외부 라이브러리 -->
+    <!-- 외부라이브러리 -->
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
-  
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- <link rel="stylesheet" /> -->
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/tour.css" />
 
-    <!-- 초기 코드 -->
-    <script src = js/index.js></script>
-    <script src = js/header.js></script>
-    <script src = js/banner.js></script>
-    <script src = js/tour.js></script>
+    <!-- js 초기 코드  -->
+    <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/tour.js"></script>
   </head>
 
   <body>
-    <!-- <div class="box_wrap">
-      <div class="box">박스</div>
-    </div> -->
     <!-- 전체 레이아웃  -->
     <div class="wrap">
       <!-- 상단 -->
@@ -113,27 +109,14 @@
             <div class="swiper sw_banner">
               <div class="swiper-wrapper">
                 <!-- API 연동 -->
-                
-
               </div>
               <div class="swiper-pagination"></div>
-            </div> 
+            </div>
 
-            <!-- <div class="banner_slide"> -->
-              <!-- <div class="banner_list">
-                <a href="#">
-                  <img src="images/v1.png" alt="banner" title="배너" />
-                </a>
-              </div>
-              <div class="banner_list">
-                <a href="#">
-                  <img src="images/v2.jpg" alt="banner2" title="배너2" />
-                </a>
-              </div>
-            </div> -->
             <button class="slide_bt banner_left">
               <img src="images/slider_arrow.svg" alt="left" title="left" />
             </button>
+
             <button class="slide_bt banner_right">
               <img src="images/slider_arrow.svg" alt="right" title="right" />
             </button>
@@ -148,50 +131,31 @@
               <!--Start 목록영역 -->
               <div class="section_category">
                 <ul class="section_category_bts">
-                  <!--api 연동-->
+                  <!-- API 연동 -->
                 </ul>
               </div>
+
               <div class="section_slide">
-                <!--Start 추후 JSON 데이터 연동으로 변경 예정 -->
-                <div class="item">
-                  <a href="#">
-                    <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
-                    <span>나트랑</span>
-                    <span>[10%쿠폰] 아동 동반 가족여행 강력 추천</span>
-                    <p>
-                      방콕/파타야 5일, 중대형기종(347석) 탑승, 24년 오픈 5성
-                      윈덤 좀티엔 파타야,마사지 2시간,핵심일정 포함
-                    </p>
-                    <span><b>109,000</b>원~</span>
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="#">
-                    <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
-                    <span>나트랑</span>
-                    <span>[10%쿠폰] 아동 동반 가족여행 강력 추천</span>
-                    <p>
-                      방콕/파타야 5일, 중대형기종(347석) 탑승, 24년 오픈 5성
-                      윈덤 좀티엔 파타야,마사지 2시간,핵심일정 포함
-                    </p>
-                    <span><b>109,000</b>원~</span>
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="#">
-                    <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
-                    <span>나트랑</span>
-                    <span>[10%쿠폰] 아동 동반 가족여행 강력 추천</span>
-                    <p>
-                      방콕/파타야 5일, 중대형기종(347석) 탑승, 24년 오픈 5성
-                      윈덤 좀티엔 파타야,마사지 2시간,핵심일정 포함
-                    </p>
-                    <span><b>109,000</b>원~</span>
-                  </a>
+                <!-- Swipe 투어 영역 -->
+                <div class="swiper sw_tour">
+                  <div class="swiper-wrapper">
+                    <!-- API 연동 -->
+                  </div>
                 </div>
 
-                <!--End 추후 JSON 데이터 연동으로 변경 예정 -->
+                <button class="slide_bt tour_prev banner_left">
+                  <img src="images/slider_arrow.svg" alt="left" title="left" />
+                </button>
+
+                <button class="slide_bt tour_next banner_right">
+                  <img
+                    src="images/slider_arrow.svg"
+                    alt="right"
+                    title="right"
+                  />
+                </button>
               </div>
+
               <!--End 목록영역 -->
             </div>
             <div class="section_bts">
