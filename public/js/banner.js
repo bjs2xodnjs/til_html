@@ -57,8 +57,8 @@ window.addEventListener("load", function () {
         clickable: true,
       },
       navigation: {
-        nextEl: ".banner_right",
-        prevEl: ".banner_left",
+        nextEl: ".sw_banner. banner_next",
+        prevEl: ".sw_banner. banner_prec",
       },
       autoplay: {
         delay: 2500,

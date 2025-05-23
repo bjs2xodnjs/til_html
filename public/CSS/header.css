@@ -1,5 +1,11 @@
+main {
+  padding-top: 150px;
+}
 .header {
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
+
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #ebebeb;
@@ -21,12 +27,12 @@
   justify-content: space-between;
   align-items: center;
 
-  /* margin-top: 30px; */
-  /* margin-bottom: 30px; */
-  margin: 20px 0;
+  /* padding-top: 30px; */
+  /* padding-bottom: 30px; */
+  padding: 20px 0;
 }
 .header_top_down {
-  margin: 0px;
+  padding: 0px;
 }
 
 .header_top_left {
@@ -44,8 +50,8 @@
 }
 .search_down {
   position: absolute;
+  top: 5px;
   left: 350px;
-  top: 10px;
 }
 
 .search_form {
@@ -173,4 +179,27 @@
 }
 .cupon > li > a > img {
   transform: translateY(10%);
+}
+/* 모바일 헤더 */
+.m.header {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 54px;
+  border-bottom: 1px solid #ebebeb;
+  z-index: 999;
+}
+/* 반응형 작업 */
+@media all and (max-width: 1024px) {
+  main {
+    padding-top: 54px;
+  }
+  .header {
+    display: none;
+  }
+  .m_header {
+    display: none;
+  }
 }

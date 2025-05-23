@@ -25,25 +25,3 @@
   object-fit: over;
   display: block;
 }
-.slide_bt {
-  position: absolute;
-  top: 50%;
-  /* transform: translateY(-50%); */
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid #e6e6e6;
-  background-color: rgba(255, 255, 255, 0.85);
-  cursor: pointer; /* 손가락 모양 */
-  z-index: 100;
-}
-.banner_left {
-  left: 0;
-  transform: translateX(-50%) translateY(-50%) rotate(180deg);
-  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
-}
-.banner_right {
-  right: 0;
-  transform: translateX(50%) translateY(-50%);
-  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
-}
