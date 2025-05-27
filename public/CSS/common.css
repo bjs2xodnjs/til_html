@@ -1,10 +1,10 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   outline-style: none;
 }
 
@@ -19,6 +19,11 @@ ul {
 }
 html {
   width: 100%;
+  /* 반응형 최소 너비 설정 */
+  min-width: 540px;
+  /* 가로 스크롤은 UI 상 좋지 않아요 */
+  overflow-x: hidden;
+
   /* 디자인 보고 수정 */
   font-size: 12px;
 }
@@ -54,12 +59,12 @@ body {
 }
 @media all and (max-width: 1024px) {
   .layout {
-    max-width: 760;
+    max-width: 760px;
   }
 }
 @media all and (max-width: 760px) {
   .layout {
-    max-width: 100px;
+    max-width: 100%;
   }
 }
 
@@ -67,8 +72,8 @@ body {
 .main_fixed {
   padding-top: 150px;
 }
-/* slide*/
 
+/* sldie 관련 공통 */
 .slide_bt {
   position: absolute;
   top: 50%;
@@ -76,45 +81,24 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+
+  cursor: pointer;
+
   border: 1px solid #e6e6e6;
   background-color: rgba(255, 255, 255, 0.85);
-  cursor: pointer; /* 손가락 모양 */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+
   z-index: 100;
 }
 .slide_bt_left {
   left: 0;
-  transform: translateX(-50%) translateY(-50%) rotate(180deg);
-  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
+  transform: translateX(-50%) translateY(-50%) rotateY(180deg);
 }
 .slide_bt_right {
   right: 0;
   transform: translateX(50%) translateY(-50%);
-  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
 }
 /* swiper 버튼 비활성시 표현 */
 .swiper-button-disabled {
   display: none !important;
 }
-/* @media screen and (max-width: 1024px) {
-  body {
-    background-color: aqua;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  body {
-    background-color: orange;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  body {
-    background-color: hotpink;
-  }
-
-  @media screen and (max-width: 760px) {
-    body {
-      background-color: yellowgreen;
-    } */
-/* } */
-/* } */
